@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador parte 2</title>
+    <link rel="Shortcut icon" href="./assets/imagenes/codoacodo.png">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/Style2.css">
+</head>
+<body>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid navegador">
+              <a class="navbar-brand text-white" href="#">
+              <img src="./assets/imagenes/codoacodo.png" alt="Logo de Codo a Codo" width="100" loading="lazy">  
+              Conf.Bs.As.
+              </a>
+            </div>
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navegador2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="link nav-link active text-white" aria-current="page" href="#">La Conferencia</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#Oradores">Los Oradores</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#LugarYFecha">El lugar y la fecha</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#Formulario">Conviértete en Orador</a>
+                  </li>
+                 <li class=  "nav-item"> <a class="nav-link" id="linkColor" href="./pages/comprartickets.html">Comprar Tickets</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="ContenedorImagen">
+          <div class="conteiner-sm TextoenImagen">
+            <h2>Conf Bs.As</h2>
+            <p>LLega por primera vez a Argentina, un evento para compartir con nuestra comunidad, el conocimiento y experiencia de los expertos que están creando el futuro de internet. Vení a conocer a los miembros del evento, a otros estudiantes de CODO A CODO y a los oradores de primer nivel que tenemos para vos. Te esperamos!</p>
+          </div>
+          <div class="Botones">
+            <button type="button" class="btn btn-outline-light">Quiero ser Orador</button>
+            <button type="button" class="btn btn-success">Comprar Tickets</button>
+          </div>
+        </div>
+    </main>
+        <div class="ContenedorCards">
+           <section class="introduccion" id="Oradores">
+                  <div>
+                     <label for="Conoce">CONOCE A LOS</label>
+                    <h2>ORADORES</h2>
+                  </div>
+              </div>
+            </section>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/imagenes/steve.jpg" class="card-img-top" alt="Imagen Steve Jobs">
+              <div>
+                <button type="button" class="btn btn-warning BotonesCards">JavaScript</button>
+                <button type="button" class="btn btn-primary BotonesCards">React</button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Steves Jobs</h5>
+                <p class="card-text"> Destacado informático y empresario estadounidense. Creador del primer ordenador personal y fundador de Apple Computer, una empresa innovadora en el sector de la informática. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="Imagen Bill Gates">
+              <div>
+                <button type="button" class="btn btn-warning BotonesCards">JavaScript</button>
+                <button type="button" class="btn btn-primary BotonesCards">React</button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bill Gates</h5>
+                <p class="card-text">Empresario e informático estadounidense. Fundador de la empresa tecnológica Microsoft, y uno de los creadores del sistema operativo Windows.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="Imagen Ada Lovelace">
+              <div>
+                <button type="button" class="btn btn-secondary BotonesCards">Negocios</button>
+                <button type="button" class="btn btn-danger BotonesCards">Startups</button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ada Lovelace</h5>
+                <p class="card-text">Matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+    <section class="seccionMardelplata" id="LugarYFecha">
+      <div class="ImagenMardel">
+      </div>
+      <div class="InfolugaryFecha">
+               <h3> Buenos Aires - Octubre</h3>
+               <p> El 15 de Octubre los esperamos en el centro de convenciones de Mar del Plata, donde se llevara a cabo una de las conferencias mas importantes</p>
+               <button type="button" class="btn btn-outline-light ConoceMas">Conoce más</button>
+      </div>
+    </section>
+    <form action="formulario" class="Formulario" id="Formulario">
+       <label>CONVIERTETE EN</label> <H2>ORADOR</H2>
+       <br>
+       <p>Anótate como orador para dar una <a class="Charla" href ="CharlaIgnite">charla ignite </a>. Cuéntanos de qué quieres hablar!</p>
+       <input type="text"class="Inputs" placeholder="Nombre">
+       <input type="text"class="Inputs" placeholder="Apellido">
+       <br>
+       <textarea name="" id="" cols="90" rows="8" placeholder="Sobre qué quieres hablar?"></textarea>
+       <p class="Recuerda">Recuerda incluir un título para tu charla</p>
+       <button class="Enviar" type="submit">Enviar</button>
+    </form>
+ <footer class="Color">
+    <div class="row">
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Preguntas frecuentes</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Contáctanos</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Prensa</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Conferencias</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Términos y condiciones</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Privacidad</a></div>
+      <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Estudiantes</a></div>
+  </div>
+ </footer>
+ <script src="./js/bootstrap.bundle.min.js.map"></script>
+ <script src="./js/main.js"></script>
+</body>
+</html>

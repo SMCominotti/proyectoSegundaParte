@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador parte 2</title>
+    <link rel="Shortcut icon" href="../assets/imagenes/codoacodo.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/Style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid navegador">
+              <a class="navbar-brand text-white" href="#">
+              <img src="../assets/imagenes/codoacodo.png" alt="Logo de Codo a Codo" width="100" loading="lazy">  
+              Conf.Bs.As.
+              </a>
+            </div>
+              <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navegador2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="link nav-link active text-white" aria-current="page" href="../index.html">La Conferencia</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#Oradores">Los Oradores</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#LugarYFecha">El lugar y la fecha</a>
+                  </li>
+                  <li class="link nav-item"><a class="nav-link text-white" href="#Formulario">Conviértete en Orador</a>
+                  </li>
+                 <li class= "nav-item"> <a class="nav-link" id="linkColor" href="#Tickets">Comprar Tickets</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <br>
+        <div class="TarjetasPromo">
+       <div class="cardNva border-primary mb-3">
+      <div class="card-body text-dark">
+      <h5 class="card-title">Estudiante</h5>
+      <p class="card-text">Tienen un descuento <br> <b> 80% </b> </p>
+      <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+      </div>
+      </div>
+      <br>
+      <div class=" cardNva border-info mb-3">
+       <div class="card-body text-dark">
+      <h5 class="card-title">Trainee</h5>
+      <p class="card-text">Tienen un descuento <br> <b> 50% </b> </p>
+      <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+     </div>
+      </div>
+      <br>
+     <div class="cardNva border-warning mb-3">
+     <div class="card-body text-dark">
+      <h5 class="card-title">Junior</h5>
+      <p class="card-text">Tienen un descuento <br> <b> 15% </b> </p>
+      <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+     </div>
+     </div>
+      </div>
+    </main>
+      <div class="TituloTicket">
+      <p > <h6>VENTA</h6>
+     <h1>VALOR DE TICKET $200</h1>
+      </p>
+    </div>
+  <form action="" class="formularioACompletar">
+     <div class="FormularioTicket">
+         <div class="row">
+              <div class="col-md mb-3">
+              <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+              </div>
+              <div class="col-md mb-3">
+              <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
+              </div>
+              <br>
+              <br>
+         </div>
+         <div class="row">
+              <div class="col-12 mb-3">
+              <input id="mail" type="email" class="form-control" placeholder="Correo" aria-label="Email" required >
+              </div>
+         </div>
+           <div class="row gx-2">
+             <div class="col-md mb-3">
+             <label for="cantidadTickets" class="form-label">Cantidad</label>
+             <input id="cantidadTickets" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad" min="1" >
+             </div>
+             <div class="col-md mb-3">
+             <label for="categoriaSelect" class="form-label">Categoria</label>
+             <select id="categoriaSelect" class="form-select" aria-label="Categoria" >
+             <option value="" selected>--Seleccione--</option>
+             <option value="e">Estudiante</option>
+             <option value="t">Trainee</option>
+             <option value="j">Junior</option>
+             <option value="n">Sin Categoria</option>
+             </select>
+          </div>
+         </div>
+          <div class="alert alert-primary textoPagar mt-2 mb-3" role="alert" >
+          Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+         </div>
+        <div>
+          <button class="btn btn-success Enviar2" id="btnBorrar" type="reset"> Borrar </button>
+          <button type="button" class="btn btn-success btn-lg Enviar2" id="btnResumen">Resumen</button>
+        </div>
+      </div>
+    </form>
+      <br>
+      
+      <footer class="Color">
+        <div class="row">
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Preguntas frecuentes</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Contáctanos</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Prensa</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Conferencias</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Términos y condiciones</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Privacidad</a></div>
+          <div class="col pt-4 pb-4"><a class="text-white text-decoration-none d-flex justify-content-evenly" href="./assets/imagenes/error404.png">Estudiantes</a></div>
+      </div>
+     </footer>
+ <script src="../js/bootstrap.bundle.min.js.map"></script>
+ <script src="../js/main.js"></script>
+ </body>
+ </html>
