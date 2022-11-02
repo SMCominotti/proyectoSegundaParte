@@ -16,6 +16,8 @@ let categoria= document.getElementById ("categoriaSelect");
 console.log (categoria);
 let totalPago= document.getElementById ("totalPago");
 
+let totalValorTickets= document.getElementById ("totalValorTickets");
+
 function quitarClaseError(){
     let x = document.querySelectorAll(".form-control, .form-select");
     let i;
@@ -77,24 +79,29 @@ function totalAPagar(){
     }
 
         
-    let totalValorTickets=(cantidadTickets)*valorTicket;
+    function totalValorTickets ()
+    { cantidadTickets*valorTicket;
+    } 
 
-    switch(totalValorTickets)
+    let totalValorTickets
+    let DescuentoSegunCategoria
+    
+    switch (DescuentoSegunCategoria) 
     {
         case "n":
-        document.write("totalValorTickets===totalValorTickets")
+        document.write("totalValorTickets==totalValorTickets")
         break;
           
         case"e":
-        document.write("totalValorTickets=totalValorTickets-(descuentoEstudiante/100*totalValorTickets)")
+        document.write("totalValorTickets== (totalValorTickets - (descuentoEstudiante/100*totalValorTickets))")
         break
     
         case"t":
-        document.write("totalValorTickets=totalValorTickets-(descuentoTrainee/100*totalValorTickets)")
+        document.write("totalValorTickets== (totalValorTickets-(descuentoTrainee/100*totalValorTickets))")
         break;
         
         case"j":
-        document.write("totalValorTickets=totalValorTickets-(descuentoJunior/100*totalValorTickets)")
+        document.write("totalValorTickets==(totalValorTickets-(descuentoJunior/100*totalValorTickets))")
         break;
      }    
    
