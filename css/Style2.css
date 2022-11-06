@@ -189,21 +189,31 @@ background-color: #1C3D4E;
     border-radius: 5px;
     }
 
- @media screen and (min-width: 400px) { 
-        .TextoCelu{
+ @media screen and (min-width: 350px) and ( max-width:900px ) { 
+        .TextoenImagen{
             height: 80%;
             width: 80%;
             position: relative;
-            text-align: left;
-            align-content: left;
+            text-align: right;
+            align-content: right;
             margin: 10% 10% 10% 10%;
             font-size: 0.8rem;
         }
+        .Botones{
+            top: 0.05px;
+            right: 15%;
+            text-align: right;
     }
-    
+    .Formulario{
+        align-content: right;
+        height: 60vh;
+        width: 88%;
+        max-height: 50%;      
+        margin-left: 7%;
+    }
 
-        
-        
+
+}
 
         
     
